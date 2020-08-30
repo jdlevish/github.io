@@ -1,0 +1,27 @@
+{
+  "name": "jdlevish.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "mysql": "^2.18.1",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdlevish/github.io.git"
+  },
+  "author": "Joshua Levish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdlevish/github.io/issues"
+  },
+  "homepage": "https://github.com/jdlevish/github.io#readme"
+}
