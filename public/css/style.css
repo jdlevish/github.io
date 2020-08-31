@@ -4,7 +4,7 @@ body::after {
     background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
-    opacity: 0.6;
+    opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
@@ -23,6 +23,13 @@ body{
     
 }
 
+.modal{
+    background-color:black;
+  
+
+}
+
+
 
 
 h1{
@@ -34,6 +41,10 @@ h1{
 h2{
     font-size: 24px;
     
+    
+}
+h3{
+    text-align:center;
     
 }
 .container{
@@ -104,47 +115,46 @@ a{
     display: block;
 }
 
-/* hover effect */
-/* .container-overlay {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-  }
-  
-  /* Make the image to responsive */
-  /* .img-over {
-    width: 200%;
-    height: auto;
-  }
-  
-  /* The overlay effect (full height and width) - lays on top of the container and over the image */
-  /* .overlay {
-      display:none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width:100%;
-    opacity: 0;
-    transition: .3s ease;
-    
-  } */
-  
-  /* When you mouse over the container, fade in the overlay icon*/
-  /* .container-overlay:hover .overlay {
-    display:block;
-  }
-   */
-  /* The icon inside the overlay is positioned in the middle vertically and horizontally */
-  /* .tnail {
-    
-    position: absolute;
-    top: 10%;
-    left:80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */ 
-  /* When you move the mouse over the icon, change color */
-  
-  /* close hover effect */
+/* modal css */
+.modal-dialog.modal-dialog-slideout {
+	box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-dialog-slideout {
+	min-height: 100%;
+	margin: 0 0 0 auto;
+	background: #fff;
+}
+.modal.fade .modal-dialog.modal-dialog-slideout {
+	-webkit-transform: translate(100%, 0) scale(1);
+	transform: translate(100%, 0) scale(1);
+}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	display: flex;
+	align-items: stretch;
+	-webkit-box-align: stretch;
+	height: 100%;
+}
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.modal-dialog-slideout .modal-content {
+	border: 0;
+}
+.modal-dialog-slideout .modal-header,
+.modal-dialog-slideout .modal-footer {
+	height: 69px;
+	display: block;
+}
+.modal-dialog-slideout .modal-header h5 {
+	float: left;
+}
+ .alexBtn{
+     background-color:#07889B;
+ }
+ .noteBtn{
+     background-color:#18BC9C;
+ }
+

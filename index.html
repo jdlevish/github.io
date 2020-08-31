@@ -24,38 +24,45 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                 </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="https://mysterious-river-09583.herokuapp.com/">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#alexModal">
+
                             Alexandria
 
-                            <img class="img-over thumbs" src="/public/images/alexandria.jpg">
+
+
 
 
 
                         </a>
 
-                        <a class="dropdown-item" href="https://vast-basin-42357.herokuapp.com/">
+                        <a class="dropdown-item" href="https://vast-basin-42357.herokuapp.com/" data-toggle="modal"
+                            data-target="#burgerModal">
                             Burger Eatin' Bonanza
 
-                            <img class="img-over thumbs" src="/public/images/burger.PNG">
+
+
+
 
                         </a>
 
 
 
 
-                        <a class="dropdown-item" href="https://glacial-harbor-80833.herokuapp.com/notes">express note
+                        <a class="dropdown-item" href="https://glacial-harbor-80833.herokuapp.com/notes"
+                            data-toggle="modal" data-target="#noteModal">express note
                             taker
-                            <img class="img-over thumbs" src="/public/images/note.PNG">
+
                         </a>
                     </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact Me</a>
@@ -65,25 +72,99 @@
 
             </ul>
         </div>
-        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-m">
-                <div class="modal-content">
-                    <img src="/public/images/alexandria.jpg" class="modal-img">
-                    <br />
-                    <p class="modal-text"> click on image to view project</p>
 
+    </nav>
+    <div class="modal fade" id="burgerModal" data-backdrop="false" tabindex="-1" role="dialog"
+        aria-labelledby="payModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h3 class="modal-title" id="exampleModalLabel">Burger Eatin' Bonanza</h3>
+
+
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/public/images/burger.PNG">
+                    </br>
+                    <h4>Technologies Used</h4>
+                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
+
+                </div>
+                <div class="modal-footer text-right m-auto">
+                    <a href="https://vast-basin-42357.herokuapp.com/"><button type="button"
+                            class="btn btn-warning">click here for the deployed application</button></a>
+                    <a href="https://github.com/jdlevish/burgerApp"> <button type="button" class="btn btn-warning">click
+                            here for the github repo</button></a>
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="container">
+    </div>
+    <div class="modal fade" id="alexModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="payModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h3 class="modal-title" id="exampleModalLabel">Alexandria</h3>
+
+
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/public/images/alexandria.jpg">
+                    </br>
+                    <h4>Technologies Used</h4>
+                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
+
+                </div>
+                <div class="modal-footer text-right m-auto">
+                    <a href="https://mysterious-river-09583.herokuapp.com/"><button type="button"
+                            class="btn alexBtn">click here for the deployed application</button></a>
+                    <a href="https://github.com/jeanhern81/Alexandria"> <button type="button" class="btn alexBtn">click
+                            here for the github repo</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="noteModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="payModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h3 class="modal-title" id="exampleModalLabel">Note Taker App</h3>
+
+
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/public/images/note.PNG">
+                    </br>
+                    <h4>Technologies Used</h4>
+                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
+
+                </div>
+                <div class="modal-footer text-right m-auto">
+                    <a href="https://glacial-harbor-80833.herokuapp.com/"><button type="button"
+                            class="btn noteBtn">click here for the deployed application</button></a>
+                    <a href="https://github.com/jdlevish/notePadApp"><button type="button" class="btn noteBtn">click
+                            here for the github repo</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container home-text-container">
         <div class="row">
-            <span class="heroText ml-auto mr-auto pt-5 ">Joshua Levish</span>
+            <span class="home-text heroText ml-auto mr-auto pt-5 ">Joshua Levish</span>
         </div>
         <br />
         <div class="row">
-            <span class="hero2Text ml-5 pt-1">Full-Stack Web Developer </span>
+            <span class="home-text hero2Text ml-5 pt-1">Full-Stack Web Developer </span>
         </div>
     </div>
     <div class="container">
