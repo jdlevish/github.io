@@ -152,9 +152,13 @@ a{
 	float: left;
 }
  .alexBtn{
+     
      background-color:#07889B;
  }
  .noteBtn{
      background-color:#18BC9C;
+ }
+ .contForm{
+     justify-items: center;
  }
 
