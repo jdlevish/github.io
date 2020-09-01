@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>Joshua Levish</title>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
@@ -13,230 +17,239 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid bg">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light ">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" data-toggle="modal" data-target="#alexModal">
-                            Alexandria</a>
-
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#burgerModal">
-                            Burger Eatin' Bonanza
-                        </a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#noteModal">express note
-                            taker
-                        </a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dayModal">Day Planner
-                        </a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact Me</a>
-                </li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
 
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#alexModal">
+                                    Alexandria</a>
 
-            </ul>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#burgerModal">
+                                    Burger Eatin' Bonanza
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#noteModal">express
+                                    note
+                                    taker
+                                </a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dayModal">Day
+                                    Planner
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </nav>
         </div>
+        <div class="modal fade" id="burgerModal" data-backdrop="false" tabindex="-1" role="dialog"
+            aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title" id="exampleModalLabel">Burger Eatin' Bonanza</h3>
 
-    </nav>
-    <div class="modal fade" id="burgerModal" data-backdrop="false" tabindex="-1" role="dialog"
-        aria-labelledby="payModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h3 class="modal-title" id="exampleModalLabel">Burger Eatin' Bonanza</h3>
-
-
-                </div>
-                <div class="modal-body m-auto">
-                    <img class="img-fluid img-screen" src="/public/images/burger.PNG">
-                    </br>
-                    <h4>Technologies Used</h4>
-                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
-
-                </div>
-                <div class="modal-footer text-right m-auto">
-                    <a href="https://vast-basin-42357.herokuapp.com/"><button type="button"
-                            class="btn btn-warning">click here for the deployed application</button></a>
-                    <a href="https://github.com/jdlevish/burgerApp"> <button type="button" class="btn btn-warning">click
-                            here for the github repo</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="alexModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="payModal"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h3 class="modal-title" id="exampleModalLabel">Alexandria</h3>
-
-
-                </div>
-                <div class=" modal-body m-auto">
-                    <img class="img-fluid img-screen" src="/public/images/alexandria.jpg">
-                    </br>
-                    <h4>Technologies Used</h4>
-                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
-
-                </div>
-                <div class="modal-footer text-right m-auto">
-                    <a href="https://mysterious-river-09583.herokuapp.com/"><button type="button"
-                            class="btn alexBtn ">click here for the deployed application</button></a>
-                    <a href="https://github.com/jeanhern81/Alexandria"> <button type="button" class="btn alexBtn ">click
-                            here for the github repo</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="noteModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="payModal"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h3 class="modal-title" id="exampleModalLabel">Note Taker App</h3>
-
-
-                </div>
-                <div class="modal-body m-auto">
-                    <img class="img-fluid img-screen" src="/public/images/note.PNG">
-                    </br>
-                    <h4>Technologies Used</h4>
-                    <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
-
-                </div>
-                <div class="modal-footer text-right m-auto">
-                    <a href="https://glacial-harbor-80833.herokuapp.com/"><button type="button"
-                            class="btn noteBtn">click here for the deployed application</button></a>
-                    <a href="https://github.com/jdlevish/notePadApp"><button type="button" class="btn noteBtn">click
-                            here for the github repo</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="dayModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="payModal"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h3 class="modal-title" id="exampleModalLabel">Day Planner</h3>
-
-
-                </div>
-                <div class="modal-body m-auto">
-                    <img class="img-fluid img-screen" src="/public/images/dayplanner.png">
-                    </br>
-                    <h4>Technologies Used</h4>
-                    <p>Html, CSS, JavaScripte</p>
-
-                </div>
-                <div class="modal-footer text-right m-auto">
-                    <a href="https://jdlevish.github.io/week_planner/"><button type="button" class="btn dayBtn">click
-                            here for the deployed application</button></a>
-                    <a href="https://github.com/jdlevish/week_planner"><button type="button" class="btn dayBtn">click
-                            here for the github repo</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="contactModal" data-backdrop="false" tabindex="-1" role="dialog"
-        aria-labelledby="payModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                    <h3 class="modal-title" id="exampleModalLabel">Contact Me</h3>
-
-
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <form class="contForm">
-                            <label for="firstName">First Name </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
-                            </br>
-                            <label for="lastName">Last Name </label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
-                            </br>
-                            <label for="email">E-Mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter Your E-Mail">
-                            </br>
-                            <label for="email">Send me a message</label>
-                            <textarea class="form-control" id="message" rows="4"
-                                placeholder="type your message here"></textarea>
-                            </br>
-                            <label for="mailingList">check this box to be added to my future mailing list</label>
-                            <input type="checkbox" id="mailingList">
-                            </br>
-                            <button type="submit" class=" btn btn-info">submit</button>
-
-                        </form>
 
                     </div>
+                    <div class="modal-body m-auto">
+                        <img class="img-fluid img-screen" src="/public/images/burger.PNG">
+                        </br>
+                        <h4>Technologies Used</h4>
+                        <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
 
-
+                    </div>
+                    <div class="modal-footer text-right m-auto">
+                        <a href="https://vast-basin-42357.herokuapp.com/"><button type="button"
+                                class="btn btn-warning">click here for the deployed application</button></a>
+                        <a href="https://github.com/jdlevish/burgerApp"> <button type="button"
+                                class="btn btn-warning">click
+                                here for the github repo</button></a>
+                    </div>
                 </div>
-
             </div>
         </div>
-    </div>
-    <div class="container home-text-container">
-        <div class="row">
-            <span class="home-text heroText ml-auto mr-auto pt-5 ">Joshua Levish</span>
+        <div class="modal fade" id="alexModal" data-backdrop="false" tabindex="-1" role="dialog"
+            aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title" id="exampleModalLabel">Alexandria</h3>
+
+
+                    </div>
+                    <div class=" modal-body m-auto">
+                        <img class="img-fluid img-screen" src="/public/images/alexandria.jpg">
+                        </br>
+                        <h4>Technologies Used</h4>
+                        <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
+
+                    </div>
+                    <div class="modal-footer text-right m-auto">
+                        <a href="https://mysterious-river-09583.herokuapp.com/"><button type="button"
+                                class="btn alexBtn ">click here for the deployed application</button></a>
+                        <a href="https://github.com/jeanhern81/Alexandria"> <button type="button"
+                                class="btn alexBtn ">click
+                                here for the github repo</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br />
-        <div class="row">
-            <span class="home-text hero2Text ml-5 pt-1">Full-Stack Web Developer </span>
+        <div class="modal fade" id="noteModal" data-backdrop="false" tabindex="-1" role="dialog"
+            aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title" id="exampleModalLabel">Note Taker App</h3>
+
+
+                    </div>
+                    <div class="modal-body m-auto">
+                        <img class="img-fluid img-screen" src="/public/images/note.PNG">
+                        </br>
+                        <h4>Technologies Used</h4>
+                        <p>Html, CSS, JavaScript, Node.js, Handlebars.js, Express, mysql, sequelize</p>
+
+                    </div>
+                    <div class="modal-footer text-right m-auto">
+                        <a href="https://glacial-harbor-80833.herokuapp.com/"><button type="button"
+                                class="btn noteBtn">click here for the deployed application</button></a>
+                        <a href="https://github.com/jdlevish/notePadApp"><button type="button" class="btn noteBtn">click
+                                here for the github repo</button></a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="modal fade" id="dayModal" data-backdrop="false" tabindex="-1" role="dialog"
+            aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title" id="exampleModalLabel">Day Planner</h3>
+
+
+                    </div>
+                    <div class="modal-body m-auto">
+                        <img class="img-fluid img-screen" src="/public/images/dayplanner.png">
+                        </br>
+                        <h4>Technologies Used</h4>
+                        <p>Html, CSS, JavaScripte</p>
+
+                    </div>
+                    <div class="modal-footer text-right m-auto">
+                        <a href="https://jdlevish.github.io/week_planner/"><button type="button"
+                                class="btn dayBtn">click
+                                here for the deployed application</button></a>
+                        <a href="https://github.com/jdlevish/week_planner"><button type="button"
+                                class="btn dayBtn">click
+                                here for the github repo</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="contactModal" data-backdrop="false" tabindex="-1" role="dialog"
+            aria-labelledby="payModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-slideout modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h3 class="modal-title" id="exampleModalLabel">Contact Me</h3>
+
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <form class="contForm">
+                                <label for="firstName">First Name </label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                                </br>
+                                <label for="lastName">Last Name </label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+                                </br>
+                                <label for="email">E-Mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter Your E-Mail">
+                                </br>
+                                <label for="email">Send me a message</label>
+                                <textarea class="form-control" id="message" rows="4"
+                                    placeholder="type your message here"></textarea>
+                                </br>
+                                <label for="mailingList">check this box to be added to my future mailing list</label>
+                                <input type="checkbox" id="mailingList">
+                                </br>
+                                <button type="submit" class=" btn btn-info">submit</button>
+
+                            </form>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="  heroText  m-auto ">Joshua Levish</div>
+            </div>
+            <br />
+            <div class="row">
+                <div class=" hero2Text m-auto">Full-Stack Web Developer </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar fixed-bottom navbar-expand-lg navbar-light ">
+                <span class="m-auto">
+                    <a class="navbar-brand " href="http://www.twitter.com/cocktailscode"><img class="social"
+                            src="/public/images/twitter.png"></a>
+                    <a class="navbar-brand " href="http://www.instagram.com/cocktailsandcode"><img class="social"
+                            src="/public/images/insta.png"></a>
+                    <a class="navbar-brand " href="https://github.com/jdlevish"><img class="social"
+                            src="/public/images/github.png"></a>
+                    <a class="navbar-brand " href="https://www.linkedin.com/in/joshua-levish/"><img class="social"
+                            src="/public/images/LI-In-Bug.png"></a>
+                </span>
+            </nav>
+        </div>
+
+
     </div>
-    <div class="container">
-        <nav class="navbar fixed-bottom navbar-expand-lg navbar-light ">
-            <span class="m-auto">
-                <a class="navbar-brand " href="http://www.twitter.com/cocktailscode"><img class="social"
-                        src="/public/images/twitter.png"></a>
-                <a class="navbar-brand " href="http://www.instagram.com/cocktailsandcode"><img class="social"
-                        src="/public/images/insta.png"></a>
-                <a class="navbar-brand " href="https://github.com/jdlevish"><img class="social"
-                        src="/public/images/github.png"></a>
-                <a class="navbar-brand " href="https://www.linkedin.com/in/joshua-levish/"><img class="social"
-                        src="/public/images/LI-In-Bug.png"></a>
-            </span>
-        </nav>
-    </div>
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
