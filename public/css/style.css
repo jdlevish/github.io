@@ -107,9 +107,10 @@ a{
     height:auto;
     background-color:none;
 }
-.thumbs{
-    width:10vw;
-    height:10vh;
+.img-screen{
+    
+    width:auto;
+    height:50vh;
 }
 .dropdown-item:hover > .img-over{
     display: block;
@@ -120,7 +121,8 @@ a{
 	box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .modal-dialog-slideout {
-	min-height: 100%;
+    min-height: 100%;
+    min-width:100%;
 	margin: 0 0 0 auto;
 	background: #fff;
 }
@@ -158,7 +160,11 @@ a{
  .noteBtn{
      background-color:#18BC9C;
  }
+ .dayBtn{
+     background-color:#06AED5;
+ }
  .contForm{
      justify-items: center;
  }
 
+ 
