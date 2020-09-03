@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: url("/public/images/honeymoon-85d.jpg");
+    background-image: url("../images/honeymoon-85d.jpg");
     background-size:stretch;
     background-repeat: no-repeat; /* Do not repeat the image */
     
@@ -116,6 +116,7 @@ h3{
  .contForm{
      justify-items: center;
  }
+
 
  /* .home-text-container{
      background-color:white;
