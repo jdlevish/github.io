@@ -1,5 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const SendmailTransport = require('nodemailer/lib/sendmail-transport');
+const sendMail = require('./mail');
 
 const PORT = process.env.PORT || 3000
 
