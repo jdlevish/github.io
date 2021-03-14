@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const SendmailTransport = require('nodemailer/lib/sendmail-transport');
-const sendMail = require('./mail');
+
 
 const PORT = process.env.PORT || 3000
 
@@ -10,7 +9,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 require('dotenv').config()
-console.log(process.env)
+// console.log(process.env)npm start
+
 
 app.use(express.static("public"));
 
@@ -22,7 +22,7 @@ mongoose.connect("mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MO
 });
 
 // routes
-app.use(require("./routes/api.js"));
+// app.use(require("./routes/api.js"));/
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "public/index.html"));
 });
