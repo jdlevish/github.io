@@ -23,9 +23,9 @@ mongoose.connect("mongodb+srv://" + process.env.MONGOUSER + ":" + process.env.MO
 
 // routes
 app.use(require("./routes/api.js"));
-// app.get("/", function (req, res) {
-//     res.sendFile(path.join(__dirname, "public/index.html"));
-// });
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "public/index.html"));
+});
 // app.post("/api/contact", (req, res) => {
 //     var body = req.body
 //     console.log(body)
