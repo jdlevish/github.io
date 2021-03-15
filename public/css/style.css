@@ -43,12 +43,14 @@ a:link {
   
     
     text-align:center;
-    font-size: 2rem;
+    font-size: 1.2rem;
+  margin-bottom: 2rem;
 
  
 }
 .social{
     height: 4vh;
+  
     
 }
 .dropdown-menu{
